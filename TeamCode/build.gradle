@@ -26,4 +26,13 @@ android {
 dependencies {
     implementation project(':FtcRobotController')
     annotationProcessor files('lib/OpModeAnnotationProcessor.jar')
+    implementation 'org.ftclib.ftclib:core:2.0.1' // core
+    implementation 'com.spartronics4915.lib:ftc265:2.1.9'
+    implementation 'org.openftc:easyopencv:1.6.0'
+}
+repositories {
+    // This line will already be here; you do not need to add it
+    maven { url = "https://dl.bintray.com/first-tech-challenge/ftcsdk/" }
+    // Add this line
+    maven { url = "https://maven.catboy.camp" }
 }
